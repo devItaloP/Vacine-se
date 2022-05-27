@@ -150,18 +150,19 @@
                             organismo do indivíduo a gerar anticorpos contra o vírus. Pode ser desenvolvida e fabricada
                             mais rapidamente do que as vacinas tradicionais.</p>
                     </div>
+                    <div>
+                        <canvas id="Obitos" width="400" height="100"></canvas>
 
-                </article>
-                <!--3-->
-
-                <!--Gráficos-->
-                <div>
-                    <canvas id="Obitos" width="400" height="100"></canvas>
-
-                    <canvas id="Vacinas" width="400" height="100"></canvas>
-                </div>
-                <div class="clear"></div>
+                        <canvas id="Vacinas" width="400" height="100"></canvas>
+                    </div>
+                    <div class="clear"></div>
             </div>
+
+            </article>
+            <!--3-->
+
+            <!--Gráficos-->
+
 
         </section>
         <!--Fecha Section Sobre-->
@@ -190,132 +191,134 @@
 
                 <h2 class="title center azul">Questionário</h2>
 
-                <p>Obrigado pela visualização deste projeto que visa conscientizar acerca do Coronavírus (Covid-19) e também o combate a desinformação.
-                     O questionário abaixo tem como obetivo coletar e verificar dados que demonstre a aceitação das campanhanhas de vacinação aplicadas
+                <p>Obrigado pela visualização deste projeto que visa conscientizar acerca do Coronavírus (Covid-19) e
+                    também o combate a desinformação.
+                    O questionário abaixo tem como obetivo coletar e verificar dados que demonstre a aceitação das
+                    campanhanhas de vacinação aplicadas
                     durante o período de 2021-2022.</p>
-                    <br>
-                    <br>
+                <br>
+                <br>
 
-            <div class="formulario">
-                <form method="post" autocomplete="off" name="google-sheet" class="formulario">
-                    <div class="quest-details">
-                        
-                        <input type="radio" name="Gender" value="Masculino" id="dot-1">
-                        <input type="radio" name="Gender" value="Feminino" id="dot-2">
-                        <input type="radio" name="Gender" value="Prefiro Não dizer" id="dot-3">
-                        <input type="radio" name="Idade" value="Menos de 20 anos" id="dot-4">
-                        <input type="radio" name="Idade" value="20-40" id="dot-5">
-                        <input type="radio" name="Idade" value="41-60" id="dot-6">
-                        <input type="radio" name="Idade" value="Mais de 60 anos" id="dot-7">
-                        <input type="radio" name="PegouCovid" value="Nenhuma" id="dot-8">
-                        <input type="radio" name="PegouCovid" value="Uma vez" id="dot-9">
-                        <input type="radio" name="PegouCovid" value="Duas vezes" id="dot-10">
-                        <input type="radio" name="PegouCovid" value="Três ou mais" id="dot-11">
-                        <input type="radio" name="Vacinou" value="1ª dose" id="dot-12">
-                        <input type="radio" name="Vacinou" value="Vacinação Completa" id="dot-13">
-                        <input type="radio" name="Vacinou" value="Reforço" id="dot-14">
-                        <input type="radio" name="NovaDose" value="Sim" id="dot-15">
-                        <input type="radio" name="NovaDose" value="Não" id="dot-16">
-                        <input type="radio" name="NovaDose" value="Talvez" id="dot-17">
+                <div class="formulario">
+                    <form method="post" autocomplete="off" name="google-sheet" class="formulario">
+                        <div class="quest-details">
 
-                        <span class="quest-title">Gênero</span>
-                        <div class="category">
-                            <label for="dot-1">
-                                <span class="dot um"></span>
-                                <span class="Gender" value="Masculino">Masculino</span>
-                            </label>
-                            <label for="dot-2">
-                                <span class="dot dois"></span>
-                                <span class="Gender">Feminino</span>
-                            </label>
-                            <label for="dot-3">
-                                <span class="dot tres"></span>
-                                <span class="Gender">Prefiro não dizer</span>
+                            <input type="radio" name="Gender" value="Masculino" id="dot-1">
+                            <input type="radio" name="Gender" value="Feminino" id="dot-2">
+                            <input type="radio" name="Gender" value="Prefiro Não dizer" id="dot-3">
+                            <input type="radio" name="Idade" value="Menos de 20 anos" id="dot-4">
+                            <input type="radio" name="Idade" value="20-40" id="dot-5">
+                            <input type="radio" name="Idade" value="41-60" id="dot-6">
+                            <input type="radio" name="Idade" value="Mais de 60 anos" id="dot-7">
+                            <input type="radio" name="PegouCovid" value="Nenhuma" id="dot-8">
+                            <input type="radio" name="PegouCovid" value="Uma vez" id="dot-9">
+                            <input type="radio" name="PegouCovid" value="Duas vezes" id="dot-10">
+                            <input type="radio" name="PegouCovid" value="Três ou mais" id="dot-11">
+                            <input type="radio" name="Vacinou" value="1ª dose" id="dot-12">
+                            <input type="radio" name="Vacinou" value="Vacinação Completa" id="dot-13">
+                            <input type="radio" name="Vacinou" value="Reforço" id="dot-14">
+                            <input type="radio" name="NovaDose" value="Sim" id="dot-15">
+                            <input type="radio" name="NovaDose" value="Não" id="dot-16">
+                            <input type="radio" name="NovaDose" value="Talvez" id="dot-17">
+
+                            <span class="quest-title">Gênero</span>
+                            <div class="category">
+                                <label for="dot-1">
+                                    <span class="dot um"></span>
+                                    <span class="Gender" value="Masculino">Masculino</span>
+                                </label>
+                                <label for="dot-2">
+                                    <span class="dot dois"></span>
+                                    <span class="Gender">Feminino</span>
+                                </label>
+                                <label for="dot-3">
+                                    <span class="dot tres"></span>
+                                    <span class="Gender">Prefiro não dizer</span>
+                                </label>
+                            </div>
+                            <span class="quest-title">Idade</span>
+                            <div class="category">
+                                <label for="dot-4">
+                                    <span class="dot quatro"></span>
+                                    <span class="Idade">Menos de 20 anos</span>
+                                </label>
+                                <label for="dot-5">
+                                    <span class="dot cinco"></span>
+                                    <span class="Idade">20-40</span>
+                                </label>
+                                <label for="dot-6">
+                                    <span class="dot seis"></span>
+                                    <span class="Idade">41-60</span>
+                                </label>
+                                <label for="dot-7">
+                                    <span class="dot sete"></span>
+                                    <span class="Idade">Mais de 60 anos</span>
+                                </label>
+                            </div>
+                            <!--3-->
+                            <span class="quest-title">Quantas vezes você teve Covid-19?</span>
+                            <div class="category">
+                                <label for="dot-8">
+                                    <span class="dot oito"></span>
+                                    <span class="PegouCovid">Nenhuma</span>
+                                </label>
+                                <label for="dot-9">
+                                    <span class="dot nove"></span>
+                                    <span class="PegouCovid">Uma vez</span>
+                                </label>
+                                <label for="dot-10">
+                                    <span class="dot dez"></span>
+                                    <span class="PegouCovid">Duas Vezes</span>
+                                </label> <label for="dot-11">
+                                    <span class="dot onze"></span>
+                                    <span class="PegouCovid">Três ou mais</span>
+                                </label>
+
+                            </div>
+
+                            <span class="quest-title">Como está sua vacinação?</span>
+                            <div class="category">
+                                <label for="dot-12">
+                                    <span class="dot doze"></span>
+                                    <span class="Vacinou">1ª dose</span>
+                                </label>
+                                <label for="dot-13">
+                                    <span class="dot treze"></span>
+                                    <span class="Vacinou">Vacinação Completa</span>
+                                </label>
+                                <label for="dot-14">
+                                    <span class="dot quatorze"></span>
+                                    <span class="Vacinou">Reforço</span>
+                                </label>
+                            </div>
+                            <span class="quest-title">Caso tivesse uma nova dose de reforço, você faria uso dela?</span>
+                            <div class="category">
+                                <label for="dot-15">
+                                    <span class="dot quinze"></span>
+                                    <span class="NovaDose">Sim</span>
+                                </label>
+                                <label for="dot-16">
+                                    <span class="dot dezesseis"></span>
+                                    <span class="NovaDose">Não</span>
+                                </label>
+                                <label for="dot-17">
+                                    <span class="dot dezessete"></span>
+                                    <span class="NovaDose">Talvez</span>
+                                </label>
+                            </div>
+
+
+
+                            <label>
+
+                                <input type="hidden" name="submit" value="submit">
+                                <button class="btn-enviar" title="Enviar">Enviar</button>
+
                             </label>
                         </div>
-                        <span class="quest-title">Idade</span>
-                        <div class="category">
-                            <label for="dot-4">
-                                <span class="dot quatro"></span>
-                                <span class="Idade">Menos de 20 anos</span>
-                            </label>
-                            <label for="dot-5">
-                                <span class="dot cinco"></span>
-                                <span class="Idade">20-40</span>
-                            </label>
-                            <label for="dot-6">
-                                <span class="dot seis"></span>
-                                <span class="Idade">41-60</span>
-                            </label>
-                            <label for="dot-7">
-                                <span class="dot sete"></span>
-                                <span class="Idade">Mais de 60 anos</span>
-                            </label>
-                        </div>
-                        <!--3-->
-                        <span class="quest-title">Quantas vezes você teve Covid-19?</span>
-                        <div class="category">
-                            <label for="dot-8">
-                                <span class="dot oito"></span>
-                                <span class="PegouCovid">Nenhuma</span>
-                            </label>
-                            <label for="dot-9">
-                                <span class="dot nove"></span>
-                                <span class="PegouCovid">Uma vez</span>
-                            </label>
-                            <label for="dot-10">
-                                <span class="dot dez"></span>
-                                <span class="PegouCovid">Duas Vezes</span>
-                            </label> <label for="dot-11">
-                                <span class="dot onze"></span>
-                                <span class="PegouCovid">Três ou mais</span>
-                            </label>
 
-                        </div>
-                        
-                        <span class="quest-title">Como está sua vacinação?</span>
-                        <div class="category">
-                            <label for="dot-12">
-                                <span class="dot doze"></span>
-                                <span class="Vacinou">1ª dose</span>
-                            </label>
-                            <label for="dot-13">
-                                <span class="dot treze"></span>
-                                <span class="Vacinou">Vacinação Completa</span>
-                            </label>
-                            <label for="dot-14">
-                                <span class="dot quatorze"></span>
-                                <span class="Vacinou">Reforço</span>
-                            </label>
-                        </div>
-                        <span class="quest-title">Caso tivesse uma nova dose de reforço, você faria uso dela?</span>
-                        <div class="category">
-                            <label for="dot-15">
-                                <span class="dot quinze"></span>
-                                <span class="NovaDose">Sim</span>
-                            </label>
-                            <label for="dot-16">
-                                <span class="dot dezesseis"></span>
-                                <span class="NovaDose">Não</span>
-                            </label>
-                            <label for="dot-17">
-                                <span class="dot dezessete"></span>
-                                <span class="NovaDose">Talvez</span>
-                            </label>
-                        </div>
-                   
-
-
-                    <label>
-
-                        <input type="hidden" name="submit" value="submit">
-                        <button class="btn-enviar" title="Enviar">Enviar</button>
-
-                    </label> 
+                    </form>
                 </div>
-
-                </form>
-            </div>
                 <div class="clear"></div>
             </div>
 
